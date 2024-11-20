@@ -10,7 +10,6 @@ namespace HangfireMvc.Controllers
     public class HangfireController : Controller
     {
         // GET: Hangfire
-        // GET: Hangfire
         public ActionResult Index()
         {
             // Schedule a job to execute after 1 minute
@@ -22,7 +21,7 @@ namespace HangfireMvc.Controllers
             // Schedule a recurring job
             RecurringJob.AddOrUpdate("RecurringJob", () => Console.WriteLine("Recurring Job executed"), Cron.Minutely);
 
-            RecurringJob.AddOrUpdate("RecurringJob", () => Console.WriteLine("Recurring Job executed"), Cron.Daily(hour:01, minute: 01));
+            RecurringJob.AddOrUpdate("RecurringJob", () => Console.WriteLine("Recurring Job executed"), Cron.Daily(hour:11, minute: 55));
             return Content("Hangfire jobs scheduled!");
         }
     }

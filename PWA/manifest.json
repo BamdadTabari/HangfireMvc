@@ -1,0 +1,13 @@
+{
+  "name": "PWA HangfireMvc",
+  "short_name": "HangfireMvc",
+  "description": "An Offline HangfireMvc",
+  "background_color": "#fff",
+  "theme_color": "#3f51b5",
+  "start_url": "/index.html?utm_source=homescreen",
+  "scope": ".",
+  "orientation": "portrait-primary",
+  "display": "standalone",
+  "dir": "ltr",
+  "lang": "en-US"
+}
